@@ -29,10 +29,12 @@ class BookDetailsActivity : AppCompatActivity() {
 
     fun loadBook(book : Book){
         et_book_title.setText(book.title)
+        et_book_author.setText(book.author)
+        et_book_date.setText(book.publicationDate.toString())
+        sw_watched.isChecked = book.isWatched
     }
 
     fun createBook():Book{
-        var newBook = Book(et_book_title.text.toString())
-        return newBook
+        return Book(et_book_title.text.toString(), et_book_author.text.toString(), et_book_date.text.toString() as Long, sw_watched.isChecked)
     }
 }
