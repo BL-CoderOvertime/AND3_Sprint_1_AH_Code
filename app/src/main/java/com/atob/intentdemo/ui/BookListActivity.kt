@@ -1,13 +1,12 @@
 package com.atob.intentdemo.ui
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.atob.intentdemo.Models.Book
 import com.atob.intentdemo.R
 import kotlinx.android.synthetic.main.activity_book_list.*
-
 
 class BookListActivity : AppCompatActivity() {
 

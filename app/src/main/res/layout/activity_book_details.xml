@@ -23,12 +23,13 @@
            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-    <EditText
+<!--    <EditText
             android:id="@+id/et_book_date"
             android:hint="Publication Date"
+            android:inputType="number"
             android:layout_margin="20dp"
            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
 
     <TextView
             android:text="Read?"

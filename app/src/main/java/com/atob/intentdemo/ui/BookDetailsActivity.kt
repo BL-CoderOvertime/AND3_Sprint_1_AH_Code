@@ -2,11 +2,12 @@ package com.atob.intentdemo.ui
 
 import android.app.Activity
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.atob.intentdemo.Models.Book
 import com.atob.intentdemo.R
 import kotlinx.android.synthetic.main.activity_book_details.*
+
 
 class BookDetailsActivity : AppCompatActivity() {
 
@@ -30,11 +31,10 @@ class BookDetailsActivity : AppCompatActivity() {
     fun loadBook(book : Book){
         et_book_title.setText(book.title)
         et_book_author.setText(book.author)
-        et_book_date.setText(book.publicationDate.toString())
         sw_watched.isChecked = book.isWatched
     }
 
     fun createBook():Book{
-        return Book(et_book_title.text.toString(), et_book_author.text.toString(), et_book_date.text.toString() as Long, sw_watched.isChecked)
+        return Book(et_book_title.text.toString(), et_book_author.text.toString(), sw_watched.isChecked)
     }
 }
