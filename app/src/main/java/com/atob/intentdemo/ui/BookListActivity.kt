@@ -13,12 +13,11 @@ import kotlinx.android.synthetic.main.activity_book_list.*
 
 class BookListActivity : AppCompatActivity() {
 
-    var bookList = mutableListOf<Book>()
-
     companion object{
         const val REQUEST_CODE_EDIT_BOOK = 2
     }
 
+    var bookList = mutableListOf<Book>()
     val adapter = BookAdapter(bookList, this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
