@@ -8,9 +8,12 @@
         tools:context=".ui.BookListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_booklist"
+            app:layout_constraintBottom_toTopOf="@id/btn_add_book"
             app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/book_list_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content"/>
 
     <Button
             android:id="@+id/btn_add_book"
